@@ -1,0 +1,121 @@
+import java.util.ArrayList;
+
+public class Deck {
+	ArrayList<Card> deck = new ArrayList<Card>();
+	
+	public Deck() {
+		Card twos = new Card(2,"spade", "Two");    
+	    Card threes = new Card(3,"spade", "Three");
+	    Card fours = new Card(4, "spade","Four");  
+	    Card fives = new Card(5, "spade", "Five");
+	    Card sixs = new Card(6, "spade", "Six");
+	    Card sevens = new Card(7, "spade" , "Seven");
+	    Card eights = new Card(8, "spade", "Eight");
+	    Card nines = new Card(9,"spade", "Nine");
+	    Card tens = new Card(10,"spade", "Ten");
+	    Card jacks = new Card(10, "spade", "Jack");
+	    Card queens = new Card(10,"spade", "Queen");
+	    Card kings = new Card(10, "spade", "King");
+	    Card aces = new Card(11, "spade", "Ace");
+	    Card twoh = new Card(2,"heart", "Two");
+	    Card threeh = new Card(3, "heart","Three");
+	    Card fourh = new Card(4, "heart", "Four");
+	    Card fiveh = new Card( 5,"heart", "Five");
+	    Card sixh = new Card( 6,"heart", "Six");
+	    Card sevenh = new Card( 7,"heart", "Seven");
+	    Card eighth = new Card( 8,"heart", "Eight");
+	    Card nineh = new Card( 9, "heart","Nine");
+	    Card tenh = new Card( 10,"heart", "Ten");
+	    Card jackh = new Card( 10, "heart","Jack");
+	    Card queenh = new Card( 10,"heart", "Queen");
+	    Card kingh = new Card( 10,"heart", "King");
+	    Card aceh = new Card( 11, "heart", "Ace");
+	    Card twod = new Card( 2,"diamond", "Two");
+	    Card threed = new Card( 3,"diamond", "Three");
+	    Card fourd = new Card( 4,"diamond", "Four");
+	    Card fived = new Card( 5,"diamond", "Five");
+	    Card sixd = new Card( 6, "diamond", "Six");
+	    Card sevend = new Card( 7,"diamond", "Seven ");
+	    Card eightd = new Card( 8, "diamond", "Eight");
+	    Card nined = new Card( 9, "diamond", "Nine");
+	    Card tend = new Card( 10, "diamond", "Ten");    
+	    Card jackd = new Card( 10, "diamond", "Jack");
+	    Card queend = new Card( 10, "diamond", "Queen");
+	    Card kingd = new Card( 10,"diamond", "King");
+	    Card aced = new Card( 11,"diamond", "Ace");
+	    Card twoc = new Card( 2,"club", "Two");
+	    Card threec = new Card( 3,"club", "Three");
+	    Card fourc = new Card( 4,"club", "Four");
+	    Card fivec = new Card( 5,"club", "Five");
+	    Card sixc = new Card( 6,"club", "Six");
+	    Card sevenc = new Card( 7,"club", "Seven");
+	    Card eightc = new Card( 8,"club", "Eight");
+	    Card ninec = new Card( 9,"club", "Nine");
+	    Card tenc = new Card( 10,"club", "Ten");   
+	    Card jackc = new Card( 10,"club", "Jack");
+	    Card queenc = new Card( 10,"club", "Queen");
+	    Card kingc = new Card( 10,"club", "King");
+	    Card acec = new Card( 11,"club", "Ace");
+	    
+	    deck.add(acec);
+	    deck.add(threeh);
+	    deck.add(aces);
+	    deck.add(jackh);
+	    deck.add(nineh);
+	    deck.add(sixd);
+	    deck.add(queend);
+	    deck.add(aceh);
+	    deck.add(nined);
+	    deck.add(fours);
+	    deck.add(fourh);
+	    deck.add(aced);
+	    deck.add(sevens);
+	    deck.add(tenh);
+	    deck.add(jackd);
+	    deck.add(tend);
+	    deck.add(fives);
+	    deck.add(eightd);
+	    deck.add(eights);
+	    deck.add(kings);
+	    deck.add(fourc);
+	    deck.add(fivec);
+	    deck.add(eightc);
+	    deck.add(ninec);
+	    deck.add(sixh);
+	    deck.add(queenh);
+	    deck.add(jacks);
+	    deck.add(sixs);
+	    deck.add(twoc);
+	    deck.add(jackc);
+	    deck.add(threed);
+	    deck.add(twod);
+	    deck.add(fourd);
+	    deck.add(queens);
+	    deck.add(sevenh);
+	    deck.add(eighth);
+	    deck.add(kingh);
+	    deck.add(threec);
+	    deck.add(twoh);
+	    deck.add(nines);
+	    deck.add(sevend);
+	    deck.add(sevenc);
+	    deck.add(sixc);
+	    deck.add(tenc);
+	    deck.add(threes);
+	    deck.add(kingc);
+	    deck.add(kingd);
+	    deck.add(fived);
+	    deck.add(twos);
+	    deck.add(tens);
+	    deck.add(fiveh);
+	    deck.add(queenc);
+	}
+	
+	public Card getCard()
+	{
+		Card randomCard = new Card();
+		int num = (int) ((Math.random() * deck.size()));
+		randomCard = deck.remove(num);
+		return randomCard;
+	}
+}
